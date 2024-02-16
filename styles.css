@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Prosto One';
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #FFFFED;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.5rem;
+}
+
+main {
+    display: flex;
+}
+
+.header-text {
+    letter-spacing: .3rem;
+    font-size: 14px;
+}
+
+.header-home {
+}
+
+.header-press {
+    margin-left: 1.05rem;
+}
+
+.header-contact {
+    margin-right: -.3rem;
+}
+
+.lower-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-divider {
+    height: 2px;
+    width: 100%;
+    border-bottom: 1px solid #312313;
+}
+
+.titles {
+    font-size: 14px;
+    letter-spacing: .05rem;
+}
+
+.card {
+    margin: 2rem;
+}
