@@ -4,30 +4,23 @@
 }
 
 html {
-    display: flex;
-    justify-content: center;
 }
 
 body {
     background-color: #FFFFED;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+}
+
+.document-container {
+    width: min(90%, 100rem);
+    margin-inline: auto;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 1.5rem;
+
 }
 
 main {
-    display: flex;
 }
 
 .header-text {
@@ -39,24 +32,18 @@ main {
 }
 
 .header-press {
-    margin-left: 1.05rem;
 }
 
 .header-contact {
-    margin-right: -.3rem;
 }
 
-.lower-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.lower-header-container, .footer-container {
+
 }
 
-.header-divider {
+.header-divider, .footer-divider {
     height: 2px;
-    width: 100%;
-    border-bottom: 1px solid #312313;
+    border-bottom: 2px solid #312313;
 }
 
 .titles {
@@ -65,5 +52,12 @@ main {
 }
 
 .card {
-    margin: 2rem;
+}
+
+.footer-container {
+
+}
+
+.macvittie-motorcycles-text {
+
 }
