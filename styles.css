@@ -13,14 +13,17 @@ body {
 
 .document-container {
     width: min(90%, 100rem);
+    height: 100vh;
+    height: 100svh;
     margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
-header {
-
-}
-
-main {
+.upper-header-container {
+    display: flex;
+    justify-content: center;
 }
 
 .header-text {
@@ -29,6 +32,7 @@ main {
 }
 
 .header-home {
+    margin-left: -1.4rem;
 }
 
 .header-press {
@@ -37,13 +41,22 @@ main {
 .header-contact {
 }
 
-.lower-header-container, .footer-container {
+.lower-header-container{
+    display: flex;
+    justify-content: space-between;
+}
 
+.lower-header-container, .footer-container {
 }
 
 .header-divider, .footer-divider {
     height: 2px;
     border-bottom: 2px solid #312313;
+}
+
+.main-section {
+    flex: 2 1 0;
+    display: flex;
 }
 
 .titles {
@@ -52,6 +65,7 @@ main {
 }
 
 .card {
+    flex: 1 1 0;
 }
 
 .footer-container {
