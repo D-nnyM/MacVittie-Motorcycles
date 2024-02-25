@@ -59,6 +59,15 @@ body {
 .main-section {
     flex: 2 1 0;
     display: flex;
+    border-left: 2px solid #312313;
+    border-right: 2px solid #312313;
+    margin: 3% 0;
+
+}
+
+.bikes-container {
+    display: flex;
+    flex: 2 1 0;
 }
 
 .titles {
@@ -72,10 +81,15 @@ body {
     flex-direction: column;
 }
 
+.cosmic-text {
+    align-self: flex-end;
+}
+
+
 .footer-container {
 
 }
 
 .macvittie-motorcycles-text {
-
+    margin-bottom: 0;
 }
