@@ -8,15 +8,17 @@ html {
 
 body {
     background-color: #FFFFED;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 
 }
 
 .document-container {
     width: min(90%, 100rem);
-    height: 100vh;
-    height: 100svh;
+    height: 90vh;
+    height: 90svh;
     margin-inline: auto;
-
     display: flex;
     flex-direction: column;
 }
@@ -66,6 +68,8 @@ body {
 
 .card {
     flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container {
