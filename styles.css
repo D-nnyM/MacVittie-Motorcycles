@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     background-color: #FFFFED;
-    width: 100svw;
+    width: min(90svw, 150rem);
     width: 100vw;
     height: 100svh;
     height: 100vh;
@@ -28,6 +28,8 @@ body {
     height: min(90svh, 100svh);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
 
 }
 
@@ -42,6 +44,7 @@ body {
 .header-text {
     letter-spacing: .3rem;
     font-size: 14px;
+padding: .35rem 0;    
 }
 
 .header-home {
@@ -71,21 +74,20 @@ body {
     display: flex;
     border-left: .125rem solid #312313;
     border-right: .125rem solid #312313;
-    margin: 3% 0;
+    margin: 2% 0;
 
 }
 
 .bikes-container {
     display: flex;
-    flex: 1 1 0;
-    width: min(90%, 40rem);
+    /* width: min(90%, 40rem); */
     align-items: center;
     justify-content: space-between;
     margin: 0 5%;
 }
 
 .titles {
-    font-size: .875rem;
+    font-size: clamp(.5rem, 1rem, 1.5rem);
     letter-spacing: .05rem;
 }
 
@@ -93,11 +95,10 @@ body {
     display: flex;
     flex-direction: column;
     height: min(100%,75rem);
-    width: min(25%, 20rem);
+    /* width: min(30%, 73.75rem); */
 }
 
 .img-wrapper {
-    height: min(75svh, 46.875rem);
     overflow: hidden;
 }
 
@@ -112,27 +113,49 @@ body {
 }
 
 .hero-img {
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .cosmic-hero-img {
 }
 
-.cosmic-text {
+.cosmic-text, .mint-chip-text, .sapphire-text {
     align-self: flex-end;
+    padding-top: 1.5%;
+}
+
+.cb350-text, .cb550f-text, .xs650-text {
+    padding-bottom: 1.5%;
 }
 
 .divider {
     border: solid black .0625rem;
     height: 65%;
+    margin: 0 2%;
 }
 
 
 .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .macvittie-motorcycles-text {
     margin-bottom: 0;
+    padding-bottom: .525rem;
     letter-spacing: ;
+    align-self: center;
+}
+
+@media (max-width:1250px) {
+
+
+
+
+
+
+    
 }
