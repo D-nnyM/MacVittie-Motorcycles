@@ -1,6 +1,16 @@
-const body = document.querySelector('body');
-const viewportWidth = window.innerWidth;
-const viewportHeight = window.innerHeight;
 
-// body.style.width = `${viewportWidth}px`;
-// body.style.height = `${viewportHeight}px`;
+const footerContainer = document.querySelector(".footer-container");
+const footerText = document.querySelector(".macvittie-motorcycles-text");
+const footerWidth = footerContainer.offsetWidth;
+const footerContentSize = footerText.offsetWidth;
+
+const footerTextLetterSpacing = footerText.style.letterSpacing.slice(-4);
+
+footerContainer.addEventListener('resize', () => {
+    while (footerWidth > footerContentSize) {
+        // footerTextLetterSpacing = ;
+    }
+
+})
+
+
