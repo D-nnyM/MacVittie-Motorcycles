@@ -21,8 +21,6 @@ body {
     align-items: center;
 }
 
-img {
-}
 
 .document-container {
     width: 86vw;
@@ -34,9 +32,6 @@ img {
 
 }
 
-.main-header-container {
-
-}
 
 .upper-header-container {
     display: flex;
@@ -49,8 +44,8 @@ img {
     padding: .35rem 0;    
 }
 
-.header-home {
-    margin-left: -1.4rem;
+.header-press {
+    margin-left: 1.15rem;
 }
 
 
@@ -58,16 +53,13 @@ img {
     margin-right: -.3rem;
 }
 
-.main-header-container {
-}
 
 .lower-header-container{
     display: flex;
     justify-content: space-between;
 }
 
-.lower-header-container, .footer-container {
-}
+
 
 .header-divider, .footer-divider {
     border-bottom: .125rem solid #312313;
@@ -127,7 +119,7 @@ img {
 .divider {
     border: solid black .063rem;
     margin: 0 2%;
-    height: 40vh;
+    height: 30rem;
 }
 
 
@@ -144,10 +136,35 @@ img {
 }
 
 
-@media (min-width: 1251px) {
+
+
+
+
+
+
+/* 
+MEDIA QUERIES 
+*/
+
+
+@media (max-width: 2000px) {
+    .divider {
+        height: 20rem;
+    }
+}
+
+
+
+@media (min-width: 1282px) {
 
     .macvittie-motorcycles-text {
         letter-spacing: 2.5vw;
+    }
+}
+
+@media (max-width:1281px) {
+    .macvittie-motorcycles-text {
+        letter-spacing: 2.3vw;
     }
 }
 
@@ -180,7 +197,7 @@ img {
 
     .divider {
         width: 65%;
-        height: 0px;
+        height: 0rem;
         margin: 1.5vh 0;
     }
 
@@ -191,36 +208,121 @@ img {
 
 }
 
-@media (max-width: 924px) {
+
+
+@media (max-width:1002px) {
+    .macvittie-motorcycles-text {
+        letter-spacing: 1.75vw;
+    }
+}
+
+@media (max-width: 904px) {
     .macvittie-motorcycles-text {
         letter-spacing: 1.5vw;
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 823px) {
+    .macvittie-motorcycles-text {
+        letter-spacing: 1.25vw;
+    }
+}
+
+@media (max-width: 756px) {
     .macvittie-motorcycles-text {
         letter-spacing: 1vw;
     }
 }
 
+@media (max-width: 698px) {
+    .macvittie-motorcycles-text {
+        letter-spacing: .75vw;
+    }
+}
+
 @media (max-width: 660px) {
+
+    .header-text {
+        letter-spacing: .23rem;
+    }
+
+    .macvittie-motorcycles-text {
+        font-size: 1.75rem;
+    }
+
+}
+
+@media (max-width: 568px) {
+
+    .main-section {
+        margin: 6% 0;
+    }
 
     .macvittie-motorcycles-text {
         font-size: 1.5rem;
+        
     }
 
+    .divider {
+        margin: 2.5vh 0;
+    }
 }
 
-@media (max-width: 495px) {
+
+
+@media (max-width: 487px) {
+
+    .header-text {
+        letter-spacing: .15rem;
+    }
+
+    .header-home {
+        margin-left: 0;
+    }
+
+    .header-contact {
+        margin-right: -.1rem;
+    }
+
+    .header-press {
+        margin-left: 1rem
+    }
+
+    .main-section {
+        margin: 6% 0;
+    }
 
     .macvittie-motorcycles-text {
         font-size: 1.25rem;
+        letter-spacing: 1vw;
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 436px) {
+
+    .main-section {
+        margin: 9% 0;
+    }
 
     .macvittie-motorcycles-text {
-        font-size: .9rem;
+        font-size: 1rem;
+        letter-spacing: 1.2vw;
     }
+}
+
+@media (max-width: 424px) {
+
+    .macvittie-motorcycles-text {
+        font-size: 1rem;
+        letter-spacing: 1vw;
+    }
+
+    .main-section {
+        margin: 8% 0;
+    }
+
+    .divider {
+        margin: 2vh 0;
+    }
+
 }
