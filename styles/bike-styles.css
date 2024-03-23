@@ -1,0 +1,39 @@
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.individual-bike-container {
+    width: 60%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-top: .125rem solid #312313;
+    border-bottom: .125rem solid #312313;
+
+}
+
+.bike-name {
+    letter-spacing: .6`vw;
+}
+
+.bike-description {
+    padding: 8% 15%;
+    background-color: #B7A37850;
+
+}
+
+.bike-model {
+    letter-spacing: .6vw;
+}
+
+.macvittie-motorcycles-text {
+    color:#312313;
+}
