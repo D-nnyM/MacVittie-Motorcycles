@@ -93,6 +93,10 @@ body {
     height: min(100%,75rem);
 }
 
+.img-wrapper:hover {
+    transform: scale(1.02);
+}
+
 .img-wrapper {
     overflow: hidden;
     border-radius: 5px;
