@@ -6,12 +6,16 @@
 html {
     padding: 0;
     margin: 0;
+    width: 100svw;
+    width: 100vw;
+    height: 100svh;
+    height: 100vh;
 }
 
 body {
     margin: 0;
     background-color: #FFFFED;
-    width: min(90svw, 150rem);
+    width: 100svw;
     width: 100vw;
     height: 100svh;
     height: 100vh;
@@ -25,6 +29,7 @@ body {
 .document-container {
     width: 86vw;
     width: 86svw;
+    height: 95svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +46,11 @@ body {
 .header-text {
     letter-spacing: .3rem;
     font-size: 14px;
-    padding: .35rem 0;    
+    padding: .35rem 0;
+}
+
+.header-text:hover {
+    transform: scale(1.1);
 }
 
 .header-press {
@@ -70,10 +79,13 @@ body {
     border-left: .125rem solid #312313;
     border-right: .125rem solid #312313;
     margin: 3% 0;
+    height: 75%;
 
 }
 
-
+.content-container {
+    height: 100%;
+}
 
 .bikes-container {
     display: flex;
