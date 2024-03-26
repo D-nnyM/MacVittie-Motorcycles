@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 5%;
+    margin: 0;
 }
 
 
@@ -37,7 +37,7 @@
 .image-gallery {
     display: flex;
     justify-content: space-between;
-    margin-top: 4%;
+    margin-top: clamp(1vh, 4%, 2vh);
 }
 
 .gallery-item {
@@ -70,26 +70,104 @@
 
 .bike-name {
     letter-spacing: 1vw;
-    margin: 1rem 0
+    margin: 1rem 0;
+    height: 20%;
 }
 
 .bike-description {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
 
     padding: 6% 15%;
     background-color: #B7A37850;
     height: 90%;
     
+}
 
+.bike-features {
+    margin: 0;
+    letter-spacing: .5vw;
+}
+
+.feature-list {
+    padding-left: 0;
+    margin: 5%
+}
+
+.feature-list-item {
+    margin: 2% 0;
 }
 
 .bike-model {
     letter-spacing: .35vw;
     margin: 1rem 0;
+    height: 20%;
 }
 
 .macvittie-motorcycles-text {
     color:#312313;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1250px) {
+    .main-section {
+        border: none;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .individual-bike-container {
+        height: 55%;
+        width: 85%;
+    }
+
+    .image-gallery {
+        height: 15%;
+    }
+
+    .text-container {
+        width: 100%;
+        height: 40%;
+        border-top: none;
+        border-bottom: none;
+        border-left: 0.125rem solid #312313;
+        border-right: 0.125rem solid #312313;
+
+    }
+
+   .bike-name {
+    margin-top: 0;
+   }
+
+    .bike-description {
+        overflow: scroll;
+        height: 60%;
+        padding: 4% 2%;
+        margin: 0 5%;
+
+        align-items: normal;
+    
+    }
+
+    .bike-model {
+        margin-bottom: 0;
+    }
+
+    .feature-list {
+        margin: 0;
+        padding-left: 4%;
+    }
+
+    .feature-list-item {
+        margin: 3% 5%;
+    }
 }
