@@ -147,7 +147,8 @@ body {
 }
 
 .macvittie-motorcycles-text {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: .35rem;
     align-self: center;
 }
 

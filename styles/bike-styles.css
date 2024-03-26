@@ -78,6 +78,7 @@
     display: flex;
     flex-direction: column;
     overflow: scroll;
+    overscroll-behavior: contain;
 
     padding: 6% 15%;
     background-color: #B7A37850;
@@ -127,11 +128,13 @@
 
     .individual-bike-container {
         height: 55%;
-        width: 85%;
+        width: 100%;
     }
 
     .image-gallery {
         height: 15%;
+        width: 85%;
+        align-self: center;
     }
 
     .text-container {
@@ -146,6 +149,7 @@
 
    .bike-name {
     margin-top: 0;
+    letter-spacing: 1.5vw;
    }
 
     .bike-description {
@@ -160,6 +164,7 @@
 
     .bike-model {
         margin-bottom: 0;
+        letter-spacing: 1vw;
     }
 
     .feature-list {
@@ -169,5 +174,23 @@
 
     .feature-list-item {
         margin: 3% 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-gallery {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    
+    .bike-name {
+        font-size: 1.25rem;
+    }
+
+    .bike-model {
+        letter-spacing: .35vw;
+        font-size: 1.25rem;
     }
 }
