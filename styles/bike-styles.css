@@ -1,3 +1,7 @@
+.main-section {
+    margin: 5% 0;
+}
+
 .content-container {
     display: flex;
     align-items: center;
@@ -70,8 +74,7 @@
 
 .bike-name {
     letter-spacing: 1vw;
-    margin: 1rem 0;
-    height: 20%;
+    margin-bottom: auto;
 }
 
 .bike-description {
@@ -102,8 +105,7 @@
 
 .bike-model {
     letter-spacing: .35vw;
-    margin: 1rem 0;
-    height: 20%;
+    margin-top: auto;
 }
 
 .macvittie-motorcycles-text {
@@ -177,6 +179,13 @@
     }
 }
 
+@media (max-width: 600px) {
+    .main-section {
+        margin-top: 7%;
+        margin-bottom: 12%;
+    }
+}
+
 @media (max-width: 480px) {
     .image-gallery {
         width: 100%;
@@ -192,5 +201,12 @@
     .bike-model {
         letter-spacing: .35vw;
         font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 349px) {
+
+    .macvittie-motorcycles-text {
+        letter-spacing: .6vw;
     }
 }
